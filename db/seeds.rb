@@ -1,3 +1,5 @@
+require 'faker'
+
 19.times do
 	Person.create(name: Faker::Name.name, instrument: Faker::Music.instrument, favorite_city: Faker::Pokemon.location)
 end
