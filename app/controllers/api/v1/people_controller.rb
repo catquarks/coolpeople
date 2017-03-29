@@ -25,7 +25,7 @@ module Api
 				if @person.update(person_params)
 					render json: @person
 				else
-					render json: @person.errors, status:500
+					render json: @person.errors.full_messages, status:500
 				end
 			end
 
